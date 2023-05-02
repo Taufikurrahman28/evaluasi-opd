@@ -17,10 +17,30 @@ class Evaluasi extends Model
         'url_web',
         'tanggal_pemantauan',
         'keterangan',
-        'periodik_id'
+        'periodik_id',
+        'kategori_id',
+        'catatan',
     ];
     public function periodik()
     {
         return $this->belongsTo(Periodik::class);
     }
+
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class);
+    }
+
+    public function details()
+    {
+        return $this->hasMany(DetailEvaluasi::class);
+    }
+
+    public function gambar()
+    {
+        return $this->hasMany(GambarEvaluasi::class);
+    }
+
+
+
 }

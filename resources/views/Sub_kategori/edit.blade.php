@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                           <label for="kategori_id">Nama Kategori</label>
-                          <select type="text" class="form-control @error('kategori_id') is-invalid @enderror" id="kategori_id"
+                          <select class="form-control @error('kategori_id') is-invalid @enderror" id="kategori_id"
                               name="kategori_id">
                               @foreach ($kategori as $row)
                               <option value="{{ $row->id }}">{{ $row->nama }}</option>

@@ -1,4 +1,4 @@
 @extends('template.master')
 @section('content')
-Ini dashboard
+<h3>Selamat datang, {{ Auth::user()->name }}</h3>
 @endsection

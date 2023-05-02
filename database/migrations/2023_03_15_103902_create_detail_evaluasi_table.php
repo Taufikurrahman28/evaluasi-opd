@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('detail_evaluasi', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('kategori_id');
-            $table->foreign('kategori_id')->references('id')->on('kategori');
+            $table->unsignedBigInteger('evaluasi_id');
+            $table->foreign('evaluasi_id')->references('id')->on('evaluasi');
             $table->unsignedBigInteger('sub_kategori_id');
             $table->foreign('sub_kategori_id')->references('id')->on('sub_kategori');
             $table->boolean('ketersediaan')->default(false);

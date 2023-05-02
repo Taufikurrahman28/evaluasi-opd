@@ -26,7 +26,7 @@
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
             aria-controls="collapsePages">
             <i class='bx bx-list-check' style="font-size: 25px"></i>
-            <span>Taks</span>
+            <span>Menu</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
@@ -46,16 +46,6 @@
             </div>
         </div>
     </li>
-
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-        <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-user"></i>
-            <span>User</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
 
 
     <!-- Sidebar Toggler (Sidebar) -->

@@ -17,11 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('nama_opd');
             $table->string('nama_web')->nullable();
-            $table->date('tanggal_pemantuan');
+            $table->date('tanggal_pemantauan');
             $table->string('url_web');
             $table->unsignedBigInteger('periodik_id');
             $table->foreign('periodik_id')->references('id')->on('periodik');
-            $table->text('keterangan');
+            $table->unsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategori');
+            $table->text('catatan');
             $table->timestamps();
         });
     }

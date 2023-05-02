@@ -22,4 +22,9 @@ class Kategori extends Model
     {
         return $this->belongsTo(Periodik::class);
     }
+
+    public function sub_kategori()
+    {
+        return $this->hasMany(SubKategori::class);
+    }
 }

@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('gambar_evaluasi', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->text('keterangan');
+            $table->text('caption')->nullable();
+            $table->string('path');
             $table->unsignedBigInteger('evaluasi_id');
             $table->foreign('evaluasi_id')->references('id')->on('evaluasi');
             $table->timestamps();
